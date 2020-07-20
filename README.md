@@ -21,9 +21,12 @@ group1<-data.frame(Plasma_VL2$`Wk post infection`, Plasma_VL2$R2 ,Plasma_VL2$R1,
  
 londgata1<-pivot_longer(group1,col=starts_with("P"),names_to="time",values_to="vl")
 londgata2<-pivot_longer(group2,starts_with("P"))
+<<<<<<< HEAD
 g1<-ggplot(data = group1) + 
      geom_point(mapping = aes(x = group1$Plasma_VL2..Wk.post.infection., y = group1$Plasma_VL2.R2))
 g1
 
 
+=======
+>>>>>>> 672c08af1ae81f4d179a0c5262862e0233c707b0
 
